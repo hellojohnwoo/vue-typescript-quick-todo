@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>ToDo-TaskList</title>
+  
+  <style>
+    input:checked+svg {
+      display: block;
+    }
+  </style>
+
+</head>
+
+
+
+
+<body class="p-8 bg-gray-100">
+  <div class="max-w-2xl m-auto">
+    <div class="flex relative items-center justify-between">
+      <Input class="p-4 bg-gray-200 mb-2 w-full border-gray-500 border-l-4 shadow-inner" type="text" placeholder="Enter new task">
+      <button class="bg-gray-500 px-2 py-4 absolute right-0 mr-2">Add</button>
+    </div>
+  
+    <ul class="mt-8">
+      <li class="bg-white p-2 mb-2 shadow rounded">
+        <label class="flex items-center justify-start p-4">
+          <div class="bg-white border-2 rounded w-6 h-6 border-gray-400 mr-2 flex-shrink-0 flex justify-center items-center">
+            <input type="checkbox" class="opacity-0 absolute">
+            <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20">
+              <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+            </svg>
+          </div>
+          <div class="select-none ml-2 text-black">
+            Task 1
+          </div>
+        </label>
+      </li>
+            <li class="bg-white p-2 mb-2 shadow rounded">
+        <label class="flex items-center justify-start p-4">
+          <div class="bg-white border-2 rounded w-6 h-6 border-gray-400 mr-2 flex-shrink-0 flex justify-center items-center">
+            <input type="checkbox" class="opacity-0 absolute">
+            <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20">
+              <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+            </svg>
+          </div>
+          <div class="select-none ml-2 text-black">
+            Task 2
+          </div>
+        </label>
+      </li>
+      <li class="bg-white p-2 mb-2 shadow rounded">
+        <label class="flex items-center justify-start p-4">
+          <div class="bg-white border-2 rounded w-6 h-6 border-gray-400 mr-2 flex-shrink-0 flex justify-center items-center">
+            <input type="checkbox" class="opacity-0 absolute">
+            <svg class="fill-current hidden w-4 h-4 text-green-500 pointer-events-none" viewBox="0 0 20 20">
+              <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+            </svg>
+          </div>
+          <div class="select-none ml-2 text-black">
+            Task 3
+          </div>
+        </label>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>
